@@ -11,6 +11,12 @@
     font-size: 13px !important;
 }
 
+/* 側邊欄開關按鈕永遠顯示 */
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+}
+
 /* 主標題 */
 .main-title {
     background: linear-gradient(135deg, #1B4F72, #2E86C1);
