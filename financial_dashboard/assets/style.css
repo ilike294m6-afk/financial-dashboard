@@ -1,5 +1,5 @@
 /* 隱藏 Streamlit 預設選單 */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
 
 /* 側邊欄 */
 [data-testid="stSidebar"] {
@@ -9,12 +9,6 @@
 [data-testid="stSidebar"] label {
     color: #AED6F1 !important;
     font-size: 13px !important;
-}
-
-/* 側邊欄開關按鈕永遠顯示 */
-[data-testid="collapsedControl"] {
-    display: flex !important;
-    visibility: visible !important;
 }
 
 /* 主標題 */
@@ -97,4 +91,5 @@
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
+hr { border-color: #E5E8E8 !important; }
 hr { border-color: #E5E8E8 !important; }
