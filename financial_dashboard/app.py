@@ -15,6 +15,15 @@ st.set_page_config(
 with open("financial_dashboard/assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+# 修復側邊欄收起後無法打開的問題
+st.markdown("""
+<style>
+[data-testid="collapsedControl"] {
+    display: block !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # 載入模組
 from modules import retirement, mortgage, loan_calculator, insurance, fund_allocation
 
@@ -53,4 +62,5 @@ elif page == "🛡️ 定期保險試算":
 elif page == "🏠 房貸試算":
     mortgage.render()
 elif page == "💳 貸款試算":
+    loan_calculator.render()
     loan_calculator.render()
