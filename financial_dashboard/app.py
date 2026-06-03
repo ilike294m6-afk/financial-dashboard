@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # 載入 CSS
-with open("assets/style.css") as f:
+with open("financial_dashboard/assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # 載入模組
